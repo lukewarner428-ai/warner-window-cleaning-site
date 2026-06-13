@@ -1,11 +1,6 @@
 [build]
   publish = "."
 
-[[redirects]]
-  from = "/thank-you.html"
-  to = "/thank-you/"
-  status = 301
-
 [[headers]]
   for = "/*"
   [headers.values]
