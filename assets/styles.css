@@ -512,6 +512,99 @@ textarea:focus {
   border: 1px solid var(--line);
 }
 
+.results-showcase {
+  display: grid;
+  gap: 2rem;
+  margin-top: 1.35rem;
+}
+
+.before-after-set h3 {
+  margin-bottom: 0.2rem;
+}
+
+.before-after-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.before-after-card {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.before-after-card img {
+  display: block;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.photo-label {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  z-index: 1;
+  border-radius: 999px;
+  background: rgba(16, 38, 65, 0.9);
+  color: #fff;
+  font-weight: 800;
+  padding: 0.34rem 0.72rem;
+}
+
+.photo-label-after {
+  background: rgba(10, 102, 194, 0.92);
+}
+
+.results-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(13, 64, 122, 0.1);
+}
+
+.project-card img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-card div {
+  padding: 1rem;
+}
+
+.project-card p:last-child {
+  margin-bottom: 0;
+}
+
+.project-card-large {
+  grid-column: span 2;
+}
+
+.project-card-wide {
+  grid-column: span 1;
+}
+
+.project-card-wide img {
+  height: 260px;
+}
+
 .results-three {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -576,8 +669,20 @@ textarea:focus {
   .proof-grid,
   .footer-grid,
   .results-three,
-  .local-intro {
+  .local-intro,
+  .before-after-grid,
+  .results-page-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-card-large,
+  .project-card-wide {
+    grid-column: span 1;
+  }
+
+  .project-card img,
+  .project-card-wide img {
+    height: 360px;
   }
 
   .local-intro-photo img {
@@ -596,6 +701,10 @@ textarea:focus {
 
   .result-box {
     height: 220px;
+  }
+
+  .before-after-card img {
+    height: 430px;
   }
 
   .logo img {
